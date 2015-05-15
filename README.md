@@ -1,37 +1,22 @@
-###############################################
-External Authentication Module
-###############################################
+# External Authentication Module
 
-Maintainer Contact
------------------------------------------------
-Roel Gloudemans (Nickname: lancer)
-roel@quantumfluctuations.nl or roel@gloudemans.info
+## Requirements
 
-Contibutors
------------------------------------------------
-Sander van Dragt (Nickname: svandragt)
-sander.vandragt@gmail.com
-
-
-Requirements
------------------------------------------------
-* Silverstripe 3.0.0 or later
+* Silverstripe 3.1.0 or later
 * Some PHP modules depending on the driver used like php-imap, php-ldap or
-  some specific PEAR and/or PECL modules. The module requirements are 
+  some specific PEAR and/or PECL modules. The module requirements are
   documented in the configuration template for that module (see doc directory)
 
 
-Documentation
------------------------------------------------
-http://doc.silverstripe.com/doku.php?id=modules:external-authentication
+## Documentation
+
+<https://web.archive.org/web/20090421092632/http://doc.silverstripe.com/doku.php?id=modules:external-authentication> (obsolete)
 
 
-Installation Instructions
------------------------------------------------
-* Copy the auth_external directory into your main SilverStripe directory
-* Create a proper _config.php file in your auth_external directory. You 
-  can start with the annotated examples from the doc directory
-* run /dev/build  (like http://www.yourdomain.com/dev/build)
+## Installation Instructions
+
+* `composer require lancer/silverstripe-auth-external`
+* run /dev/build  (like http://www.example.com/dev/build)
 
 You should now have an "External Account" tab on the admin page.
 
@@ -42,8 +27,8 @@ Next to the divers included in the official release, some (user maintained)
 drivers may be available by visiting the documentation link above.
 
 
-Usage Overview
------------------------------------------------
+## Usage Overview
+
 This module enables you to use external authentication sources for password
 verification. At the moment this module has 4 drivers. LDAP, FTP, IMAP and
 HTTPBASIC. The IMAP driver also supports POP3. All drivers support SSL. TLS
@@ -57,8 +42,3 @@ If you run your website at your ISP which also hosts your mailbox, you can use
 the ISP's IMAP/POP3 server to validate your logon. Other users at the ISP
 cannot login when you do that because the accounts also need to be registered
 within SilverStripe.
-
-
-Known issues
------------------------------------------------
-none
