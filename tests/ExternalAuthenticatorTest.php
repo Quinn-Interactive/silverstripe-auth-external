@@ -8,7 +8,7 @@
  * @author Roel Gloudemans <roel@gloudemans.info>
  **/
 class ExternalAuthenticatorTest extends FunctionalTest {
-	static $fixture_file = 'auth_external/tests/AuthExternal.yml';
+	static $fixture_file = 'AuthExternal.yml';
 
 	protected $autoFollowRedirection = false;
 

@@ -17,5 +17,5 @@ Member:
       Email: anothertest@silverstripe.com
       External_Anchor: anothertest
       External_SourceID: sstripe_unittest
-      password test2
+      Password: test2
       Groups: =>Group.mygroup
